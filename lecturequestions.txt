@@ -1,0 +1,19 @@
+Week 1:
+1.Which of the following statements about R are true? (1)
+	a.R is free! 
+
+	b.R can directly access and import data from a wide variety of sources, including text files, database management systems, statistical packages, web pages, and social media sites. It can write data out to these systems as well.
+
+	c.R provides quite a bit of flexibility and control over where input comes from and where it goes. 
+
+	d.All of the above
+
+(1) R in Action, Second Edition by Robert Kabacoff
+
+
+
+
+2. The runif(n) function in R:
+	a. returns ’n’ number of uniform random numbers
+	b. is similar to ifelse()
+	c. always generates numbers in the range of 0 and 100
