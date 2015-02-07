@@ -1,12 +1,14 @@
 Week 1:
 1.Which of the following statements about R are true? (1)
-	a.R is free! 
+	a.All of the below
 
-	b.R can directly access and import data from a wide variety of sources, including text files, database management systems, statistical packages, web pages, and social media sites. It can write data out to these systems as well.
+	b.R is free! 
 
-	c.R provides quite a bit of flexibility and control over where input comes from and where it goes. 
+	c.R can directly access and import data from a wide variety of sources, including text files, database management systems, statistical packages, web pages, and social media sites. It can write data out to these systems as well.
 
-	d.All of the above
+	d.R provides quite a bit of flexibility and control over where input comes from and where it goes. 
+
+	
 
 (1) R in Action, Second Edition by Robert Kabacoff
 
@@ -17,3 +19,14 @@ Week 1:
 	a. returns ’n’ number of uniform random numbers
 	b. is similar to ifelse()
 	c. always generates numbers in the range of 0 and 100
+
+
+3. The probability of mutation ABC occurring in the general population is 50%, the probability of disease XYZ occurring 25%, and the probability of a person being affected by diseases ABC if they have mutation ABC is 10%. What is the probability of mutation ABC occurring the population of patents with disease XYZ?
+a. 20%
+b. 100%
+c. 0%
+d. 50%
+
+
+4.
+ 
