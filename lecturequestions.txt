@@ -1,18 +1,12 @@
-Week 1:
+WEEK 1:
+
 1.Which of the following statements about R are true? (1)
 	a.All of the below
-
 	b.R is free! 
-
 	c.R can directly access and import data from a wide variety of sources, including text files, database management systems, statistical packages, web pages, and social media sites. It can write data out to these systems as well.
-
 	d.R provides quite a bit of flexibility and control over where input comes from and where it goes. 
 
-	
-
 (1) R in Action, Second Edition by Robert Kabacoff
-
-
 
 
 2. The runif(n) function in R:
@@ -21,12 +15,26 @@ Week 1:
 	c. always generates numbers in the range of 0 and 100
 
 
+WEEK 2:
+
 3. The probability of mutation ABC occurring in the general population is 50%, the probability of disease XYZ occurring 25%, and the probability of a person being affected by diseases ABC if they have mutation ABC is 10%. What is the probability of mutation ABC occurring the population of patents with disease XYZ?
-a. 20%
-b. 100%
-c. 0%
-d. 50%
+	a. 20%
+	b. 100%
+	c. 0%
+	d. 50%
 
 
-4.
+4. A Poisson distribution is defined as:
+	a. the probability of a given number of events occurring in a fixed interval of time and/or space if these events occur with a known average rate and independently of the time since the last event (1)
+	b. the discrete probability distribution of the number of successes in a sequence of n independent yes/no experiments, each of which yields success (2)
+	c. is a very commonly occurring continuous probability distribution—a function that tells the probability that any real observation will fall between any two real limits or real numbers, as the curve approaches zero on either side. (3)
+	d. None of the above. These answers are terrible.
+
+
+
+(1)http://en.wikipedia.org/wiki/Poisson_distribution
+(2)http://en.wikipedia.org/wiki/Binomial_distribution
+(3)http://en.wikipedia.org/wiki/Normal_distribution
+
+
  
