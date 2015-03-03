@@ -1,40 +1,123 @@
-WEEK 1:
+Sneha Krishna
+HS616
+Spring 2015
 
-1.Which of the following statements about R are true? (1)
-	a.All of the below
-	b.R is free! 
-	c.R can directly access and import data from a wide variety of sources, including text files, database management systems, statistical packages, web pages, and social media sites. It can write data out to these systems as well.
-	d.R provides quite a bit of flexibility and control over where input comes from and where it goes. 
 
+## Lecture 1a
+
+Which of the following statements about R are true? (1)
+
+* All of the below
+* R is free! 
+* R can directly access and import data from a wide variety of sources, including text files, database management systems, statistical packages, web pages, and social media sites. It can write data out to these systems as well.
+* R provides quite a bit of flexibility and control over where input comes from and where it goes. 
 (1) R in Action, Second Edition by Robert Kabacoff
 
+##Lecture 1b
 
-2. The runif(n) function in R:
-	a. returns ’n’ number of uniform random numbers
-	b. is similar to ifelse()
-	c. always generates numbers in the range of 0 and 100
+The runif(n) function in R:
 
+* returns ’n’ number of uniform random numbers
+* is similar to ifelse()
+* always generates numbers in the range of 0 and 100
+* doesn’t really do anything
 
-WEEK 2:
+##Lecture 2a
 
-3. The probability of mutation ABC occurring in the general population is 50%, the probability of disease XYZ occurring 25%, and the probability of a person being affected by diseases ABC if they have mutation ABC is 10%. What is the probability of mutation ABC occurring the population of patents with disease XYZ?
-	a. 20%
-	b. 100%
-	c. 0%
-	d. 50%
+The probability of mutation ABC occurring in the general population is 50%, the probability of disease XYZ occurring 25%, and the probability of a person being affected by diseases ABC if they have mutation ABC is 10%. What is the probability of mutation ABC occurring the population of patents with disease XYZ?
 
+* 20%
+* 100%
+* 0%
+* 50%
 
-4. A Poisson distribution is defined as:
-	a. the probability of a given number of events occurring in a fixed interval of time and/or space if these events occur with a known average rate and independently of the time since the last event (1)
-	b. the discrete probability distribution of the number of successes in a sequence of n independent yes/no experiments, each of which yields success (2)
-	c. is a very commonly occurring continuous probability distribution—a function that tells the probability that any real observation will fall between any two real limits or real numbers, as the curve approaches zero on either side. (3)
-	d. None of the above. These answers are terrible.
+##Lecture 2b
 
+A Poisson distribution is defined as:
 
-
+* The probability of a given number of events occurring in a fixed interval of time and/or space if these events occur with a known average rate and independently of the time since the last event (1)
+* The discrete probability distribution of the number of successes in a sequence of n independent yes/no experiments, each of which yields success (2)
+* Is a very commonly occurring continuous probability distribution—a function that tells the probability that any real observation will fall between any two real limits or real numbers, as the curve approaches zero on either side. (3)
+* None of the above. These answers are terrible.
 (1)http://en.wikipedia.org/wiki/Poisson_distribution
 (2)http://en.wikipedia.org/wiki/Binomial_distribution
 (3)http://en.wikipedia.org/wiki/Normal_distribution
+
+##Lecture 3a
+
+The inverse of matrix A (of size 3x3) is called A_inverse (of size 3x3). Which is the following is FALSE?
+
+* ‘A * A_inverse’ returns an identity matrix (of size 3x3)
+* ‘A %*% A_inverse’ returns an identity matrix (of size 3x3)
+* ‘solve(A)’ returns A_inverse
+* ‘solve(A_inverse)’ returns A
+
+##Lecture 3b
+
+Which of following statements about a Markov chain and is false?
+
+*a transition matrix can be used to describe the transitions of a Markov chain. the sum of each row OR the sum of each column will add up to 0. 
+*a Markov chain describes a random process
+*transitions within a Markov chain, from one state to the next depend only on the current state and not on the sequence of events that preceded it. 
+* Each entries of the transition matrix represent a probability. 
+
+##Lecture 4a
+
+Given a<- matrix(1:5) and b<-matrix(6:10) and c<-rbind(a,b), what does ‘c’ look like? 
+
+*     [,1]
+ [1,]    1
+ [2,]    2
+ [3,]    3
+ [4,]    4
+ [5,]    5
+ [6,]    6
+ [7,]    7
+ [8,]    8
+ [9,]    9
+[10,]   10
+
+*     [,1] [,2]
+[1,]    1    6
+[2,]    2    7
+[3,]    3    8
+[4,]    4    9
+[5,]    5   10
+
+*       [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+[1,]    1    2    3    4    5    6    7    8    9    10
+
+*     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    2    3    4    5
+[2,]    6    7    8    9   10
+
+
+##Lecture 4b
+
+What of the following are equivalent?
+x <- 1:10
+f <- function(n) n^2
+y <- sapply(x, f)
+l<-lapply(x,f)
+z <- vapply(x, f, numeric(1))
+* y and z
+* y and l
+* z and l
+* None
+
+
+##Lecture 5a
+
+Which of the following packages in R will allow you to easily ‘scrape’ (ie. download, then manipulate, both html and xml? 
+*rvest
+*ggplot
+*microbenchmark
+*this can’t be done
+
+##Lecture 5b
+
+stringAsFactors
+textConnection
 
 
  
