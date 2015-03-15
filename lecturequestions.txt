@@ -90,13 +90,13 @@ Given a<- matrix(1:5) and b<-matrix(6:10) and c<-rbind(a,b), what does ‘c’ l
 
 ##Lecture 4b
 
-What of the following are equivalent?
-
+Given x,f,y,l,z below, which of the following are equivalent?
 x <- 1:10
 f <- function(n) n^2
 y <- sapply(x, f)
 l<-lapply(x,f)
 z <- vapply(x, f, numeric(1))
+
 * y and z
 * y and l
 * z and l
