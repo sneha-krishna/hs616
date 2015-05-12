@@ -21,12 +21,11 @@ Cumulative Proportion  0.9246187 0.97768521 0.99478782 1.000000000
 * 3
 * 0
 
-##Lecture 08b
+## Lecture 08b
 
-Give matrix `m', what does `x` look like?
+Give matrix `m`, what does `x` look like?
 
 ```r
-> m <- matrix(c(1,2,3,4,5,6), nrow=3, ncol=2)
 > m
      [,1] [,2]
 [1,]    1    4
