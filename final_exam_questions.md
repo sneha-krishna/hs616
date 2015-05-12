@@ -33,10 +33,7 @@ Give matrix `m', what does `x` look like?
 [2,]    2    5
 [3,]    3    6
 
-```
-
-```r
-x <- sweep(m, 2, colMeans(m), "-")
+> x <- sweep(m, 2, colMeans(m), "-")
 ```
 
 * &nbsp;&nbsp; `-1   -1`
