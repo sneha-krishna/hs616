@@ -53,12 +53,11 @@ Selectorgadget can be used to figure out which css selector matches the data we 
 Useful tutorial: http://selectorgadget.com/
 
 How does it work?
-Install tool  here: http://selectorgadget.com/
-Go website for parsing.
-1. Click on the selectorgagdget link in the bookmarks. 
-2. Click on the element you want to select. Selectorgadget guesses which css selector you want.
-3. Scroll around the document to find elements that you don’t want to match and click on them.
-4. Once we’ve determined the css selector, we can use it in R to extract the values we want
+Install tool  (http://selectorgadget.com/) then go website for parsing.
+* Click on the selectorgagdget link in the bookmarks. 
+* Click on the element you want to select. Selectorgadget guesses which css selector you want.
+* Scroll around the document to find elements that you don’t want to match and click on them.
+* Once we’ve determined the css selector, we can use it in R to extract the values we want
 
 Example here: http://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html
 
@@ -66,14 +65,11 @@ Example here: http://cran.r-project.org/web/packages/rvest/vignettes/selectorgad
 magrittr: Simplifying R code with pipes
 ========================================================
   
-  <table>
-  <tr><td>
-  !["Ceci n'est pas un pipe](http://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)
-    </td><td>
-    [%>%](http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html)
-    
-    </td></tr>
-    </table>
+![Ceci n'est pas un pipe](http://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)
+
+***
+
+[%>%](http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html)
 
     
 Example
@@ -93,6 +89,11 @@ headers <- readLines(txt_con,2) %>% .[2] %>%
 cigcancer <- read.delim(txt_con, header=F)
 colnames(cigcancer) <- headers
 ```
+
+```{r show_cig_cancer, echo=FALSE}
+kable(head(cigcancer))
+```
+
 |STATE |   CIG| BLAD|  LUNG|  KID| LEUK|
 |:-----|-----:|----:|-----:|----:|----:|
 |AL    | 18.20| 2.90| 17.05| 1.59| 6.15|
