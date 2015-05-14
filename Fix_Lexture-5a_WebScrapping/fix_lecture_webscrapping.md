@@ -50,7 +50,7 @@ Install selectorgadget== tool allows you to interactively click on parts of a we
     
 Selectorgadget can be used to figure out which css selector matches the data we want. 
 
-Usefulle tutorial: http://selectorgadget.com/
+Useful tutorial: http://selectorgadget.com/
 
 How does it work?
 Install tool  here: http://selectorgadget.com/
@@ -63,7 +63,7 @@ Go website for parsing.
 Example here: http://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html
 
  
-magrittr:: Simplifying R code with pipes
+magrittr: Simplifying R code with pipes
 ========================================================
   
   <table>
@@ -94,9 +94,6 @@ cigcancer <- read.delim(txt_con, header=F)
 colnames(cigcancer) <- headers
 ```
 
-========================================================
-
-
 |STATE |   CIG| BLAD|  LUNG|  KID| LEUK|
 |:-----|-----:|----:|-----:|----:|----:|
 |AL    | 18.20| 2.90| 17.05| 1.59| 6.15|
@@ -109,11 +106,11 @@ colnames(cigcancer) <- headers
 [Cigarette Cancer Data](http://lib.stat.cmu.edu/DASL/Datafiles/cigcancerdat.html)
 
     
-    Interesting Tables in Wikipedia
-    ===
+Interesting Tables in Wikipedia
+========================================================
     
-    http://en.wikipedia.org/wiki/List_of_cancer_mortality_rates_in_the_United_States
-    http://en.wikipedia.org/wiki/List_of_countries_by_cancer_rate
-    http://en.wikipedia.org/wiki/Prevalence_of_tobacco_consumption
-    http://stats.wikimedia.org/EN/TablesWikipediaEN.htm
+http://en.wikipedia.org/wiki/List_of_cancer_mortality_rates_in_the_United_States
+http://en.wikipedia.org/wiki/List_of_countries_by_cancer_rate
+http://en.wikipedia.org/wiki/Prevalence_of_tobacco_consumption
+http://stats.wikimedia.org/EN/TablesWikipediaEN.htm
     
