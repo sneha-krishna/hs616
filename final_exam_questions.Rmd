@@ -4,7 +4,6 @@ Sneha Krishna
 ## Lecture 08a
 
 A principal component analysis is done on a data matrix, `data`, and a summary of results of this analysis is shown below. How many components are sufficient to summarize `data`?
-
 ```r
 > x <-princomp(data)
 > summary(x)
@@ -23,16 +22,12 @@ Cumulative Proportion  0.9246187 0.97768521 0.99478782 1.000000000
 ## Lecture 08b
 
 The `sweep` function returns an array obtained from an input array by sweeping out a summary statistic. Which of following lines of code will succesfully modify matrix `m`to generate matrix `x`?
-
 ```r
 > m
      [,1] [,2]
 [1,]    1    4
 [2,]    2    5
 [3,]    3    6
-```
-
-```r
 > x
      [,1] [,2]
 [1,]   -1   -1
@@ -57,7 +52,6 @@ Which of following lines of code will initialize a `ggplot` object for a data fr
 ## Lecture 09b
 
 If a scatterplot, `g`, is generated as shown below, which the following lines of code will succcesfully add a linear regression fit line to `g`?
-
 ```r
 > g <- ggplot(data, aes(x=x, y=y) ) +   geom_point()
 ```
@@ -106,7 +100,6 @@ The `closeness()` functions in the `igraph` packages measures:
 ## Lecture 12a
 
 A simple inear regression analysis is done on a data set containing vaiables `x` and `y.` Given the cofficent results below, which equation best fits this data set?
-
 ```r
 > fit <- lm(y ~ x)
 > coef(fit)
@@ -122,7 +115,6 @@ A simple inear regression analysis is done on a data set containing vaiables `x`
 ## Lecture 12b 
 
 What does the following code do?
-
 ```r
 library(manipulate)
 manipulate(plot(1:x), x = slider(1, 100))
@@ -154,7 +146,6 @@ A logisitic function can be used to model:
 ## Lecture 14a
 
 What does the `cut()` function do in the code below?
-
 ```r
 > x <- c(1:10)
 > cut(x,breaks=2)
@@ -168,7 +159,6 @@ What does the `cut()` function do in the code below?
 ## Lecutre 14b
 
 What does the following code do?
-
 ```r
 a <- c(5,10,15,20)
 b <- c(2,4,6,8)
