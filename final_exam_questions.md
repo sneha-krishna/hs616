@@ -61,16 +61,19 @@ df <- data.frame(cond = rep(c("A", "B"), each=10),
                   yvar = 1:20 + rnorm(20,sd=3))
 ```
 
+* All answers are correct
 * `ggplot() + geom_point(data = df, aes(x =xvar, y = yvar))`
 * `ggplot(df) + geom_point(aes(x = xvar, y = yvar))`
 * `ggplot(df, aes(x = xvar, y = yvar)) + geom_point()`
-* All answers are correct
 
 ## Lecture 09b
 
 If a scatterplot, `g`, is generated as shown below, which the following lines of code will succcesfully add a linear regression fit line to `g`?
 ```r
-> g <- ggplot(data, aes(x=x, y=y) ) +   geom_point()
+> df <- data.frame(cond = rep(c("A", "B"), each=10),
+                  xvar = 1:20 + rnorm(20,sd=3),
+                  yvar = 1:20 + rnorm(20,sd=3))
+> g <- ggplot(df, aes(x=xvar, y=yvar) ) +   geom_point()
 ```
 
 * `g + geom_smooth(method=lm)`
