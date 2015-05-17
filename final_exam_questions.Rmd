@@ -43,10 +43,15 @@ The `sweep` function returns an array obtained from an input array by sweeping o
 ## Lecture 09a
 
 Which of following lines of code will initialize a `ggplot` object for a data frame `df`?
+```r
+df <- data.frame(cond = rep(c("A", "B"), each=10),
+                  xvar = 1:20 + rnorm(20,sd=3),
+                  yvar = 1:20 + rnorm(20,sd=3))
+```
 
-* `ggplot() + geom_point(data = df, aes(x =x, y = y))`
-* `ggplot(df) + geom_point(aes(x = x, y = y))`
-* `ggplot(df, aes(x = x, y = y)) + geom_point()`
+* `ggplot() + geom_point(data = df, aes(x =xvar, y = yvar))`
+* `ggplot(df) + geom_point(aes(x = xvar, y = yvar))`
+* `ggplot(df, aes(x = xvar, y = yvar)) + geom_point()`
 * All answers are correct
 
 ## Lecture 09b
@@ -81,7 +86,7 @@ The `rgl1` package:
 
 ## Lecture 11a
 
-Which of the following statement regarding the `hclust` function is FLASE?
+The `hclust()` function is used for hierarchical cluster analysis on a set of dissimilarities and methods for analyzing it. Which of the following statement regarding the `hclust()` function is FALSE?
 
 * The `hclust` function requires that the number of clusters to be extracted is specified.
 * The `hclust` function performs hierarchical cluster analysis.
@@ -107,10 +112,10 @@ A simple inear regression analysis is done on a data set containing vaiables `x`
        36.0         1.94 
 ```
 
-* y=3.60+1.94*x
-* x=3.60+1.94*y
-* y=1.94+3.60*x
-* x=1.94+3.60*y
+* y=36.0+1.94*x
+* x=36.0+1.94*y
+* y=1.94+36.0*x
+* x=1.94+36.0*y
 
 ## Lecture 12b 
 
