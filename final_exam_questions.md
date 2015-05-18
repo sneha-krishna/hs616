@@ -3,7 +3,7 @@ Sneha Krishna
 
 ## Lecture 08a
 
-A principal component analysis is done on a data set, `iris` (included in R), and a summary of results of this analysis is shown below. How many components are sufficient to summarize `iris`?
+A principal component analysis is done on a data set, `iris` (included in R), and a summary of the results of this analysis is shown below. How many components are sufficient to summarize `iris`?
 ```r
 > iris
     Sepal.Length Sepal.Width Petal.Length Petal.Width    Species
@@ -101,7 +101,7 @@ The `rgl1` package:
 
 ## Lecture 11a
 
-The `hclust()` function is used for hierarchical cluster analysis on a set of dissimilarities and methods for analyzing it. Which of the following statement regarding the `hclust()` function is FALSE?
+The `hclust()` function is used for hierarchical cluster analysis. Which of the following statement regarding the `hclust()` function is FALSE?
 
 * The `hclust` function requires that the number of clusters to be extracted is specified.
 * The `hclust` function performs hierarchical cluster analysis.
@@ -110,16 +110,16 @@ The `hclust()` function is used for hierarchical cluster analysis on a set of di
 
 ## Lecture 11b
 
-The `closeness()` functions in the `igraph` packages measures:
+The `closeness()` function in the `igraph` package measures:
 
-* how many steps is required to access every other vertex from a given vertex
+* how many steps are required to access every other vertex from a given vertex
 * the number of geodesics (shortest paths) going through a vertex or an edge
 * the eigenvector centralities of positions v within it
-* None of the choices are correct
+* None of these choices are correct
 
 ## Lecture 12a
 
-A simple inear regression analysis is done on a data set containing vaiables `x` and `y.` Given the cofficent results below, which equation best fits this data set?
+A simple linear regression analysis is done on a data set containing vaiables `x` and `y.` Given the cofficent results below, which equation best fits this data set?
 ```r
 > fit <- lm(y ~ x)
 > coef(fit)
@@ -147,12 +147,12 @@ manipulate(plot(1:x), x = slider(1, 100))
 
 ## Lecture 13a
 
-Which of following statement about Simpson's Paradox is true?
+Which of following statements about Simpson's Paradox is true?
 
 *  Simpson's Paradox demonstates that a great deal of care has to be taken when combining small data sets into a large one. 
 *  Simpson's Paradox can be caused by a lurking variable.
 *  Simpson's Paradox can be caused from unequal sized groups being combined into a single data set.
-* All choices are correct.
+* All of these choices are correct.
 
 ## Lecture 13b
 
