@@ -33,7 +33,7 @@ Cumulative Proportion  0.9246187 0.97768521 0.99478782 1.000000000
 
 ## Lecture 08b
 
-The `sweep` function returns an array obtained from an input array by sweeping out a summary statistic. Which of following lines of code will succesfully modify matrix `m`to generate matrix `x`?
+The `sweep` function returns an array obtained from an input array by sweeping out a summary statistic. Which of following lines of code will succesfully modify matrix `m` to generate matrix `x`?
 ```r
 > m
      [,1] [,2]
@@ -92,12 +92,12 @@ Which of the following files are minimally necessary to create a Shiny app in R?
 
 ## Lecture 10b
 
-The `rgl1` package:
+The `rgl` package:
 
+* All answers are correct.
 * is used to produce interactive 3-D plots
 * contain the `plot3d` function that plots points within an rgl window
 * can be used to construct geometric objects using functions such as `cube3d`
-* All answers are correct.
 
 ## Lecture 11a
 
