@@ -119,7 +119,7 @@ The `closeness()` function in the `igraph` package measures:
 
 ## Lecture 12a
 
-A simple linear regression analysis is done on a data set containing vaiables `x` and `y.` Given the cofficent results below, which equation best fits this data set?
+A simple linear regression analysis is done on a data set containing vaiables `x` and `y.` Given the coefficent results below, which equation best fits this data set?
 ```r
 > fit <- lm(y ~ x)
 > coef(fit)
@@ -187,7 +187,6 @@ with (df, {df$a <- df$a+ 10; print(df)})
 ```
 
 * modifies values of `a` in data frame `df` by adding 10 to each value in column `a`, then prints out `df`
-* modifies column `a` in data frame `df` by adding the value 10 to the column, then prints out `df`
 * modifies all values in data frame `df` by adding 10 to each value, then prints out `df`
 * None of the above
 
