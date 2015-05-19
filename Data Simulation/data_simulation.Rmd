@@ -13,13 +13,13 @@ LVH: left ventricular hypertrophy
 ##Simulate a data set
 
 Features:
-*Sex
-*Age
-*chronic kidney disease (`kdisease`)
-*Homeostasis  model  assessment  of  insulin  resistance (`HOMA_IR_score`)
-*Insulin resistence (`IR`)
-*Left ventricular mass (`LVM`)
-*Estimated glomerular filtration rate(`eGFR`)
+* Sex
+* Age
+* Chronic kidney disease (`kdisease`)
+* Homeostasis  model  assessment  of  insulin  resistance (`HOMA_IR_score`)
+* Insulin resistence (`IR`)
+* Left ventricular mass (`LVM`)
+* Estimated glomerular filtration rate(`eGFR`)
 
 How are these features related to left ventricular hypertrophy?
 
@@ -65,13 +65,13 @@ patient_df<-generate_dataset(1000)
  As all this paper suggets, CKD, IR and LVH, eGFR, and LVM are all related to each other. The following graph are generated in order to better show the relationship between variables in this data set. 
 
 `plot_LVM_eGFR<- ggplot(data=patient_df,aes(x=LVM, y=eGFR))+ geom_point()+ geom_smooth(method=lm)`
-![]LVM_eGFR.png
+![](LVM_eGFR.png)
 
 `plot_kdisease_eGFR<-ggplot(data=patient_df,aes(x=kdisease, y=eGFR))+ geom_boxplot()`
-![]kdisease_eGFR.png
+![](kdisease_eGFR.png)
 
 `plot_LVH_eGFR<-ggplot(data=patient_df,aes(x=LVH, y=eGFR))+ geom_boxplot()`
-![]LVH_eGFR.png
+![](LVH_eGFR.png)
 
 ##Regression analysis
 
