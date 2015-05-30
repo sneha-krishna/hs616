@@ -2,7 +2,7 @@
 
 ##Introduction
 
-About [25%](http://www.rightdiagnosis.com/i/insulin_resistance/stats-country.htm) of people in the U.S. have been diagnosed with insulin resistance (IR). Results of this studiy showed that both IR and left ventricular hypertrophy (LVH) existed in early stage early stage chronic kidney disease (CKD) patients. The prevalence of LVH in patients with IR was significantly higher than those without, and patients with LVH had a higher prevalence of IR than those without. The patients with IR or LVH had lower levels of stimated glomerular filtration rate (e-GFR). HOMA-IR had positive correlations with left ventricular mass index (LVMI). Homeostasis  model  assessment  of  insulin  resistance (HOMA-IR)  and Left ventricular mass (LVMI) had negative correlations with e-GFR. IR had a significant correlation with LVH. Furthermore, decline of e-GFR, hypertension and anemia were also associated with both IR and LVH and may have some effects in the mechanism of IR on the development of LVH.
+About [25%](http://www.rightdiagnosis.com/i/insulin_resistance/stats-country.htm) of people in the U.S. have been diagnosed with insulin resistance (IR). Wang et al. (2014) showed that both IR and left ventricular hypertrophy (LVH) exist in early stage early stage chronic kidney disease (CKD) patients. Moreover, the prevalence of LVH in patients with IR was found to be significantly higher than those without, and patients with LVH had a higher prevalence of IR than those without. The study also showed that the patients with IR or LVH had lower levels of stimated glomerular filtration rate (e-GFR). HOMA-IR had positive correlations with left ventricular mass index (LVMI). Homeostasis  model  assessment  of  insulin  resistance (HOMA-IR)  and Left ventricular mass (LVMI) had negative correlations with e-GFR. IR had a significant correlation with LVH. Furthermore, decline of e-GFR was also associated with both IR and LVH; the authors suggest that this may have some effects in the mechanism of IR on the development of LVH.
 
 [Effects of insulin resistance on left ventricular hypertrophy in patients with CKD stage 1-3](http://www.ncbi.nlm.nih.gov/pubmed/24839054)
 
@@ -12,14 +12,22 @@ LVH: left ventricular hypertrophy
 
 ##Simulate a data set
 
-Features:
-* Sex
-* Age
-* Chronic kidney disease (`kdisease`)
-* Homeostasis  model  assessment  of  insulin  resistance (`HOMA_IR_score`)
-* Insulin resistence (`IR`)
-* Left ventricular mass (`LVM`)
-* Estimated glomerular filtration rate(`eGFR`)
+Features in data set:
+* Sex : this data set is split 50-50 between males and females
+
+* Age : age rage for this data set is between 14 and 88 years old
+
+* Chronic kidney disease (`kdisease`) : represented in data set as a categorical valiable, "CKD" or "NoCKD"
+
+* Homeostasis  model  assessment  of  insulin  resistance (`HOMA_IR_score`) : represented in data set as a quantitative vaiable  
+
+* Insulin resistence (`IR`) : represented in data set as a categorical vaiable, "IR" or "NoIR"
+
+* Left ventricular mass (`LVM`): represented in data set as a quantitative vaiable 
+
+* Estimated glomerular filtration rate(`eGFR`): represented in data set as a quantitative vaiable  
+
+* Left ventricular hypertrophy (`LVH`): represented in data set as a categorical vaiable, "LVH" or "NoLVH"
 
 How are these features related to left ventricular hypertrophy?
 
@@ -60,9 +68,9 @@ patient_df<-generate_dataset(1e6)
 ```
 
 ##Exploratory analysis
-As all this paper suggets, CKD, IR and LVH, eGFR, and LVM are all related to each other. The following graph are generated in order to better show the relationship between variables in this data set. 
+As Wand et al. (2014) paper sugget, CKD, IR and LVH, eGFR, and LVM are all related to each other. The following graphs are generated from the data in the simulated data set, in order to better understand the relationship between variables. 
 
-* paitents with LVH have lower levels of stimated glomerular filtration rate (e-GFR) on average
+* on average, patients with LVH have lower levels of glomerular filtration rate (e-GFR) 
 ```r
 plot_LVH_eGFR<-ggplot(data=patient_df,aes(x=LVH, y=eGFR))+ geom_boxplot()
 plot(plot_LVH_eGFR)
@@ -71,7 +79,7 @@ plot(plot_LVH_eGFR)
 
 
 
-* patients with IR have lower levels of stimated glomerular filtration rate (e-GFR) on average
+* on average, patients with IR have lower levels of glomerular filtration rate (e-GFR)
 ```r
 plot_IR_eGFR<-ggplot(data=patient_df,aes(x=IR, y=eGFR))+ geom_boxplot()
 plot(plot_IR_eGFR)
@@ -80,7 +88,7 @@ plot(plot_IR_eGFR)
 
 
 
-* HOMA-IR has positive correlations with left ventricular mass index (LVM)
+* HOMA-IR has a positive correlation with left ventricular mass index (LVM)
 ```r
 fit_IRscore_LVM <- lm(HOMAIRscore~ LVM, data=patient_df)
 summary(fit_IRscore_LVM)
@@ -106,7 +114,7 @@ F-statistic: 3.038e+04 on 1 and 999998 DF,  p-value: < 2.2e-16
 ```
 
 
-* HOMA-IR score has negative correlations with e-GFR
+* HOMA-IR score has a negative correlation with e-GFR
 ```r
 fit_HOMAIRscore_eGFR <- lm(HOMAIRscore~ eGFR, data=patient_df)
 summary(fit_HOMAIRscore_eGFR)
@@ -134,7 +142,7 @@ F-statistic: 4.412e+04 on 1 and 999998 DF,  p-value: < 2.2e-16
 
 
 
-* Left ventricular mass (LVM) has negative correlations with e-GFR
+* Left ventricular mass (LVM) has a negative correlation with e-GFR
 ```r
 fit_LMV_eGFR <- lm(LVM~ eGFR, data=patient_df)
 summary(fit_LMV_eGFR )
@@ -166,7 +174,7 @@ F-statistic: 2.329e+06 on 1 and 999998 DF,  p-value: < 2.2e-16
 
 ##Regression analysis
 
-Which model best fits data?
+Which model is the best fit for the data in the simulated data set?
 
 * Logistic regresison model?
 ```r
@@ -199,10 +207,16 @@ AIC: 326892
 Number of Fisher Scoring iterations: 19
 ```
 
-* Decision tree?
+* Decision tree model?
 ```r
 d_tree_fit<- ctree(LVH~IR+kdisease,data=patient_df)
 plot(d_tree_fit)
 ```
 ![](d_tree.png)
 
+
+
+
+##Summary
+
+The decision tree model seems to fit this data best. This data set demonstrates the value of exploring the relationship between variables within a data set, and then trying different models for expressing the data set as a whole.
